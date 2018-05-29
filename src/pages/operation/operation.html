@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Operation</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <h2>Welcome!</h2>
+  <p>The name is {{ getAccountName() }}</p>
+  <p>The balance is {{ getAccountBalance() | currency }}</p>
+
+  <button  (click)="performDeposit()" ion-button>Deposit</button>
+  <button  (click)="performWithdrawal()" ion-button>Withdraw</button>
+
+</ion-content>
+

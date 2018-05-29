@@ -1,0 +1,23 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Deposit</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <form [formGroup]="myForm" (ngSubmit)="performDeposit()">
+
+      <ion-label fixed>Amount</ion-label>
+      <ion-input placeholder="Amount" formControlName="amount"></ion-input>
+
+      <div padding>
+        <button ion-button block type="submit">Perform Deposit</button>
+      </div>      
+
+    </form>
+
+</ion-content>

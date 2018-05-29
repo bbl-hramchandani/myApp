@@ -1,0 +1,22 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title> {{ item.accountNumber }} </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-label>Transaction Date</ion-label>
+    <ion-item> {{item.dateOfTransaction}} </ion-item>
+    <ion-label>Transaction Type</ion-label>
+    <ion-item> {{item.transactionType}} </ion-item>
+    <ion-label>Transaction Amount</ion-label>
+    <ion-item> {{item.amount}} </ion-item>          
+  </ion-list>
+
+  <button (click)="dismissThis()" ion-button>Go Back</button>
+
+</ion-content>
